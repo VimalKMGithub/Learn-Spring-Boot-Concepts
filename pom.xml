@@ -22,10 +22,10 @@
 
     <modules>
         <module>eureka-server</module>
-<!--        <module>gateway-service</module>-->
-<!--        <module>db-service</module>-->
-<!--        <module>user-service</module>-->
-<!--        <module>shared-lib</module>-->
+        <module>gateway-service</module>
+        <!--        <module>db-service</module>-->
+        <!--        <module>user-service</module>-->
+        <!--        <module>shared-lib</module>-->
     </modules>
 
     <!-- <dependencyManagement>
