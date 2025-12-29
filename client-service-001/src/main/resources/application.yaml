@@ -1,15 +1,17 @@
+server:
+  port: 0  # Random port
+
 spring:
   application:
     name: client-service-001
-
-server:
-  port: 0
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
   instance:
+    # Fixes the "0" display and collision issues
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     hostname: localhost
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 5
