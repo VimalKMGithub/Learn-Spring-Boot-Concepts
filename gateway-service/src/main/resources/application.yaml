@@ -1,3 +1,23 @@
+server:
+  port: 9000
+
 spring:
   application:
     name: gateway-service
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: false
+    registry-fetch-interval-seconds: 5
+  instance:
+    hostname: localhost
