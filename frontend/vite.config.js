@@ -17,6 +17,6 @@ export default defineConfig({
         secure: false,
       }
     },
-    port: 9226
+    port: 9225
   }
 })
