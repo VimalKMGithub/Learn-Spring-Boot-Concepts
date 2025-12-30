@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.csrf-info {
+  text-align: left;
+}
+
+.csrf-info p {
+  margin: 10px 0;
+  word-break: break-all;
+}
+
+.token {
+  font-family: monospace;
+  background: #eee;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
